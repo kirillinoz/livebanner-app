@@ -1,0 +1,73 @@
+<template>
+  <div class="mt-10">
+    <!-- Template -->
+    <div class="flex justify-between">
+      <h5>Template</h5>
+      <button disabled class="button p-0">Flood</button>
+    </div>
+    <!-- Colors -->
+    <div class="mt-5 flex justify-between">
+      <h5>Colors</h5>
+      <div class="flex-1 flex">
+        <input type="color" @change="setForegroundColor" :value="foregroundColor" class="mr-2" />
+        <input type="color" @change="setBackgroundColor" :value="backgroundColor" />
+      </div>
+    </div>
+    <!-- Range -->
+    <div class="mt-5 flex justify-between">
+      <h5>Range</h5>
+      <div class="flex-1 flex justify-between">
+        <button
+          class="button mr-2"
+          :class="{ highlight: followerRange === 10 }"
+          @click="setFollowerRange(10)"
+        >
+          10
+        </button>
+        <button
+          class="button mr-2"
+          :class="{ highlight: followerRange === 100 }"
+          @click="setFollowerRange(100)"
+        >
+          100
+        </button>
+        <button
+          class="button"
+          :class="{ highlight: followerRange === 1000 }"
+          @click="setFollowerRange(1000)"
+        >
+          1000
+        </button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  methods: {
+    setForegroundColor(e) {
+      this.$store.commit('banner/setForegroundColor', e.target.value)
+    },
+    setBackgroundColor(e) {
+      this.$store.commit('banner/setBackgroundColor', e.target.value)
+    },
+    setFollowerRange(followerRange) {
+      this.$store.commit('banner/setFollowerRange', followerRange)
+    },
+  },
+  computed: {
+    foregroundColor() {
+      return this.$store.state.banner.foregroundColor
+    },
+    backgroundColor() {
+      return this.$store.state.banner.backgroundColor
+    },
+    followerRange() {
+      return this.$store.state.banner.followerRange
+    },
+  },
+}
+</script>
+
+<style></style>

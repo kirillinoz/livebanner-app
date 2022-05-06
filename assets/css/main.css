@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tailwind CSS */
+
+@layer base {
+  body {
+    @apply bg-gray-200;
+  }
+  h3 {
+    @apply text-2xl font-bold text-gray-500 tracking-tight;
+  }
+  h4 {
+    @apply font-bold text-gray-500;
+  }
+  h5 {
+    @apply p-3 mr-2 flex-1 flex font-bold text-gray-500 tracking-tight justify-center items-center;
+  }
+
+  p {
+    @apply text-lg;
+  }
+
+  input[type='color'] {
+    @apply flex-1 h-full appearance-none bg-gray-200 rounded-lg cursor-pointer;
+  }
+
+  input[type='color']::-webkit-color-swatch {
+    @apply border-0 rounded-lg;
+  }
+}
+
+@layer components {
+  .card {
+    background-color: theme('colors.white');
+    border-radius: theme('borderRadius.lg');
+    padding: theme('spacing.6');
+    box-shadow: theme('boxShadow.xl');
+    border: theme('borderWidth.0') solid theme('colors.gray.200');
+    max-width: theme('maxWidth.full');
+  }
+  .button {
+    @apply px-6 py-3 flex-1 bg-gray-200 font-bold rounded-lg;
+  }
+  .button.highlight {
+    @apply bg-primary text-white;
+  }
+  .button:disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+
+  .tag-highlight {
+    @apply border-primary;
+  }
+  .tag-highlight > h4 {
+    @apply text-primary;
+  }
+
+  .carousel {
+    animation: carousel;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes carousel {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-101%);
+    }
+    100% {
+      transform: translateX(-202%);
+    }
+  }
+}
