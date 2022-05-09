@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card rounded-none dmd:rounded-lg">
     <!-- Heading and plan tag -->
     <div class="flex justify-between">
       <h3>Profile</h3>
