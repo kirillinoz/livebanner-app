@@ -3,16 +3,16 @@
     <h2 class="text-4xl text-gray-500 font-bold">
       <span class="text-primary">Customize</span> your banner.
     </h2>
-    <div class="flex mt-10">
-      <div class="flex-1 flex justify-center items-center card mr-2">
+    <div class="flex flex-col mt-10 md:flex-row">
+      <div class="flex-1 flex justify-center items-center card md:mr-2">
         <img class="mr-2" src="../static/template.svg" alt="Template Icon" />
         <p class="font-bold text-gray-500">Template</p>
       </div>
-      <div class="flex-1 flex justify-center items-center card mr-2">
+      <div class="flex-1 flex justify-center items-center card mt-5 md:mr-2 md:mt-0">
         <img class="mr-2" src="../static/colors.svg" alt="Colors Icon" />
         <p class="font-bold text-gray-500">Colors</p>
       </div>
-      <div class="flex-1 flex justify-center items-center card">
+      <div class="flex-1 flex justify-center items-center card mt-5 md:mt-0">
         <img class="mr-2" src="../static/follower-range.svg" alt="Follower Range Icon" />
         <p class="font-bold text-gray-500">Follower range</p>
       </div>

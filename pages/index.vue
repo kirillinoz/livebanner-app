@@ -4,7 +4,7 @@
       <nuxt-link v-if="session" class="h-max button highlight" to="/dashboard">Dashboard</nuxt-link>
       <button v-else class="button highlight" @click="signIn">Login</button>
     </Header>
-    <div class="mx-auto max-w-3xl">
+    <div class="mx-auto max-w-3xl px-3">
       <SectionHero />
       <SectionAbout />
       <SectionFeatures />

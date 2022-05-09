@@ -1,7 +1,7 @@
 <template>
-  <section class="mt-10 flex justify-between items-center">
+  <section class="mt-10 flex justify-between items-center flex-col md:flex-row">
     <div class="mr-10">
-      <h1 class="text-7xl text-gray-500 font-bold">
+      <h1 class="text-7xl text-gray-500 font-bold text-center mb-10 md:text-left md:mb-0">
         Make <br />
         Your <br />
         Profile <br />

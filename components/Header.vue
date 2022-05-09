@@ -1,6 +1,6 @@
 <template>
   <header class="bg-white">
-    <div class="mx-auto max-w-3xl flex items-center justify-between py-4">
+    <div class="mx-auto max-w-3xl flex items-center justify-between px-3 py-4">
       <div>
         <nuxt-link class="flex items-center" to="/">
           <img class="h-12" src="../static/livebanner.svg" alt="LiveBanner" />
