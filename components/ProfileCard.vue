@@ -10,7 +10,7 @@
         <h4>{{ pro ? '★ Pro' : '☆ Basic' }}</h4>
       </div>
     </div>
-    <div class="mt-10 flex justify-between">
+    <div class="mt-10 flex flex-col justify-between sm:flex-row">
       <!-- Profile image and name -->
       <div class="flex-1 flex mr-2">
         <img
@@ -26,7 +26,7 @@
         </h6>
       </div>
       <!-- Upgrade to Pro -->
-      <button disabled class="button highlight">Get Pro</button>
+      <button disabled class="button highlight mt-5 sm:mt-0">Get Pro</button>
     </div>
   </div>
 </template>

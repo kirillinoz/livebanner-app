@@ -16,23 +16,23 @@
     <!-- Range -->
     <div class="mt-5 flex justify-between">
       <h5>Range</h5>
-      <div class="flex-1 flex justify-between">
+      <div class="flex-1 flex flex-col justify-between sm:flex-row">
         <button
-          class="button mr-2"
+          class="button sm:mr-2"
           :class="{ highlight: followerRange === 10 }"
           @click="setFollowerRange(10)"
         >
           10
         </button>
         <button
-          class="button mr-2"
+          class="button mt-2 sm:mr-2 sm:mt-0"
           :class="{ highlight: followerRange === 100 }"
           @click="setFollowerRange(100)"
         >
           100
         </button>
         <button
-          class="button"
+          class="button mt-2 sm:mt-0"
           :class="{ highlight: followerRange === 1000 }"
           @click="setFollowerRange(1000)"
         >
