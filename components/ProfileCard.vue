@@ -35,7 +35,6 @@
 export default {
   computed: {
     user() {
-      console.log(this.$store.state.auth.user)
       return this.$store.state.auth.user
     },
     twitter_handle() {
