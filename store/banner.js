@@ -56,6 +56,7 @@ export const actions = {
     const { error } = await this.$supabase
       .from('banners')
       .update({
+        force_run: state.running ? true : false,
         template: state.template,
         foreground_color: state.foregroundColor,
         background_color: state.backgroundColor,
@@ -77,6 +78,7 @@ export const actions = {
       .from('banners')
       .update({
         running: true,
+        force_run: true,
       })
       .eq('id', this.$supabase.auth.user().id)
 
@@ -94,6 +96,7 @@ export const actions = {
       .from('banners')
       .update({
         running: false,
+        force_run: false,
       })
       .eq('id', this.$supabase.auth.user().id)
 
