@@ -12,8 +12,6 @@ export const login = async (supabase) => {
 
     const user = result.user
 
-    console.log(user)
-
     const email = user.email
     const password = user.uid
 

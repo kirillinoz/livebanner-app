@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply bg-gray-200;
+    @apply bg-gray-200 font-inter;
   }
   h3 {
     @apply text-2xl font-bold text-gray-500 tracking-tight;

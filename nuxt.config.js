@@ -7,15 +7,69 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'LiveBanner',
+    title: 'LiveBanner • Dynamic Banners for Twitter',
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Make your profile stand out on Twitter. Create a unique dynamic banner using our tools: templates, colors and more.',
+      },
       { name: 'format-detection', content: 'telephone=no' },
+      //Open Graph Data
+      { property: 'og:site_name', content: 'LiveBanner' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://livebanner.net',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'LiveBanner • Dynamic Banners for Twitter',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'Make your profile stand out on Twitter. Create a unique dynamic banner using our tools: templates, colors and more.',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/og-image.png',
+      },
+      { property: 'og:image:width', content: '1200' },
+      { property: 'og:image:height', content: '630' },
+      { name: 'twitter:site', content: '@LiveBannerNET' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://livebanner.net',
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'LiveBanner • Dynamic Banners for Twitter',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content:
+          'Make your profile stand out on Twitter. Create a unique dynamic banner using our tools: templates, colors and more.',
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: '/og-image.png',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -33,6 +87,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -51,6 +106,12 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
+
+  googleFonts: {
+    families: {
+      Inter: [700],
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
