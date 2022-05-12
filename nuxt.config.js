@@ -18,7 +18,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Make your profile stand out on Twitter. Create a unique dynamic banner using our tools: templates, colors and more.',
+          'Make your profile stand out on Twitter. Create unique dynamic banners using templates, colors and more.',
       },
       { name: 'format-detection', content: 'telephone=no' },
       //Open Graph Data
@@ -38,12 +38,12 @@ export default {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'Make your profile stand out on Twitter. Create a unique dynamic banner using our tools: templates, colors and more.',
+          'Make your profile stand out on Twitter. Create unique dynamic banners using templates, colors and more.',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '/og-image.png',
+        content: 'https://i.imgur.com/aAnFh3U.png',
       },
       { property: 'og:image:width', content: '1200' },
       { property: 'og:image:height', content: '630' },
@@ -63,12 +63,12 @@ export default {
         hid: 'twitter:description',
         name: 'twitter:description',
         content:
-          'Make your profile stand out on Twitter. Create a unique dynamic banner using our tools: templates, colors and more.',
+          'Make your profile stand out on Twitter. Create unique dynamic banners using templates, colors and more.',
       },
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: '/og-image.png',
+        content: 'https://i.imgur.com/aAnFh3U.png',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
