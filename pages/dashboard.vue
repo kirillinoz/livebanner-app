@@ -6,6 +6,9 @@
     <div class="mx-auto max-w-3xl">
       <ProfileCard class="mt-10" />
       <BannerCard class="mt-10" />
+      <p class="text-center text-sm font-bold mt-2 text-gray-500">
+        Note: the banner may take up to one minute to update.
+      </p>
     </div>
   </div>
 </template>
