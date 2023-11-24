@@ -1,68 +1,58 @@
-# livebanner-app
+# LiveBanner (Broken, no Twitter API)
+[Demo](https://livebanner.netlify.app) (Broken, no Twitter API) | [Code](https://github.com/kirillinoz/livebanner-app)
 
-## Build Setup
+## Overview
+LiveBanner was a web application for creating dynamic banners for your Twitter profile. The banner would change according to the amount of followers your account has. You could set up different step ranges, change colors and add text to the banner.
 
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Folder Structure](#folder-structure)
+* [Packages Used](#packages-used)
+
+## Installation
+1) `git clone https://github.com/kirillinoz/livebanner-app.git`
+2) `cd livebanner-app`
+3) `npm install`
+
+## Usage
+1) Create .env file
+2) Add `FIREBASE_API_KEY`, `SUPABASE_ANON_KEY` and `SUPABASE_URL` (No need anymore)
+3) `npm run start`
+4) Open your browser and go to http://localhost:3000
+
+## Folder Structure
 ```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+- /assets
+  - /css
+  - /demo
+  - /scripts
+  - /templates
+- /components
+- /content
+- /layouts
+- /pages
+- /plugins
+- /static
+- /store
 ```
-
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
-
-## Special Directories
-
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
-
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+## Packages Used
+```bash
+livebanner-app@1.0.0
+├── @nuxt/content@1.15.1
+├── @nuxtjs/axios@5.13.6
+├── @nuxtjs/google-fonts@1.3.0
+├── @nuxtjs/tailwindcss@4.2.1
+├── @supabase/supabase-js@1.35.7
+├── core-js@3.33.3
+├── eslint-config-prettier@8.10.0
+├── firebase@9.23.0
+├── hex-to-css-filter@5.4.0
+├── nuxt@2.17.2
+├── postcss@8.4.31
+├── prettier@2.8.8
+├── vue-server-renderer@2.7.15
+├── vue-template-compiler@2.7.15
+├── vue@2.7.15
+└── webpack@4.47.0
+```
