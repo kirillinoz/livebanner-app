@@ -2,7 +2,7 @@
 [Demo](https://livebanner.netlify.app) (Broken, no Twitter API, but you can still see the dashboard) | [Code](https://github.com/kirillinoz/livebanner-app)
 
 ## Overview
-LiveBanner was a web application for creating dynamic banners for your Twitter profile. The banner would change according to the amount of followers your account has. You could set up different step ranges, change colors and add text to the banner.
+LiveBanner was a web application for creating dynamic banners for your Twitter profile. The banner would change according to the amount of followers your account has. You could set up different step ranges, change colors, and add text to the banner.
 
 ## Table of Contents
 * [Installation](#installation)
