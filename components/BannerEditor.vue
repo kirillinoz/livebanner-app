@@ -13,6 +13,11 @@
         <input type="color" @change="setBackgroundColor" :value="backgroundColor" />
       </div>
     </div>
+    <!-- Caption -->
+    <div class="mt-5 flex justify-between">
+      <h5>Caption</h5>
+      <input type="text" @input="setCaption" :value="caption" />
+    </div>
     <!-- Range -->
     <div class="mt-5 flex justify-between">
       <h5>Range</h5>
@@ -52,6 +57,9 @@ export default {
     setBackgroundColor(e) {
       this.$store.commit('banner/setBackgroundColor', e.target.value)
     },
+    setCaption(e) {
+      this.$store.commit('banner/setCaption', e.target.value.toUpperCase())
+    },
     setFollowerRange(followerRange) {
       this.$store.commit('banner/setFollowerRange', followerRange)
     },
@@ -62,6 +70,9 @@ export default {
     },
     backgroundColor() {
       return this.$store.state.banner.backgroundColor
+    },
+    caption() {
+      return this.$store.state.banner.caption
     },
     followerRange() {
       return this.$store.state.banner.followerRange

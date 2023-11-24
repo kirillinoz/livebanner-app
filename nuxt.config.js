@@ -110,6 +110,7 @@ export default {
   googleFonts: {
     families: {
       Inter: [700],
+      'Libre Franklin': [900],
     },
   },
 

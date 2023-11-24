@@ -3,6 +3,7 @@ export const state = () => ({
   template: 'flood',
   foregroundColor: '#262261',
   backgroundColor: '#a9a7d8',
+  caption: '',
   followerRange: 10,
   lastUpdate: null,
 })
@@ -19,6 +20,9 @@ export const mutations = {
   },
   setBackgroundColor(state, backgroundColor) {
     state.backgroundColor = backgroundColor
+  },
+  setCaption(state, caption) {
+    state.caption = caption
   },
   setFollowerRange(state, num) {
     state.followerRange = num

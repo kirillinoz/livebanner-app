@@ -24,12 +24,12 @@ export default {
   },
   mounted() {
     this.$store.commit('auth/setSession', this.$supabase.auth.session())
-    if (this.$supabase.auth.session()) {
-      this.$store.dispatch('auth/getUser')
-      this.$store.dispatch('banner/getBanner')
-    } else {
-      this.$router.push('/')
-    }
+    //if (this.$supabase.auth.session()) {
+    this.$store.dispatch('auth/getUser')
+    this.$store.dispatch('banner/getBanner')
+    //} else {
+    //  this.$router.push('/')
+    //}
   },
 }
 </script>

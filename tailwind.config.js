@@ -10,6 +10,7 @@ module.exports = {
     },
     fontFamily: {
       inter: ['Inter', 'sans-serif'],
+      franklin: ['Libre Franklin', 'sans-serif'],
     },
     extend: {
       colors: {
@@ -21,4 +22,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  mode: 'jit',
 }
